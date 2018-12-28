@@ -23,7 +23,7 @@ class Solution:
         :rtype: int
         """
         rst = self.cur.val
-        for i in range(200):
+        for i in range(20):
             rand = random.randint(0, i)
             if rand == 0: rst = self.cur.val
             self.cur = self.cur.next
