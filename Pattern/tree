@@ -1,0 +1,3 @@
+449. Serialize and Deserialize BST:
+    The ordering feature of BST is used to compact the elements in the encoded stream.
+    We can reconstruct the tree given the preorder/postorder and inorder of the BST so that bytes used to represent the null children can be saved. And since the value of the tree is integer, 4 bytes are enough to represent a node in the tree rather than conversing the value into a string(This works for tree nodes with small values). Then remove the delineators from the streams since the nodes are in fixed-size which is 4 bytes. Decodes the streams every 4 bytes and construct the tree at the same time. The solution of Leetcode is clarified for this idea.
